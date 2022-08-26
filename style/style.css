@@ -1,1 +1,79 @@
 @import url(helpers/reset.css);
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+
+:root {
+
+  --background-color: #d5e1ef;
+  --white: hsl(0, 0%, 100%);
+  --font-colorI: hsl(218, 44%, 22%);
+  --font-colorII: hsl(220, 15%, 55%);
+
+}
+
+
+*{
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Outfit';
+  background-color: var(--background-color);
+}
+
+#container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  width: 100%;
+  height: 600px
+}
+
+
+#qr-container{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: var(--white);
+  padding-top: 10px;
+  width: 250px;
+  height: 380px;
+  border-radius:10px;
+}
+
+.qr-image-item{
+  border-radius: 10px ;
+  width: 230px;
+}
+
+.p-container{
+  text-align: center;
+}
+
+.p-one{
+  font-weight: 700;
+  width: 250px;
+  padding: 20px;
+  text-align: center;
+  color: var(--font-colorI);
+}
+
+.p-two{
+  font-weight: 400;
+  font-size: 15px;
+  width: 100%;
+  padding: 0 20px 0 20px;
+  color: var(--font-colorII);
+}
+
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
